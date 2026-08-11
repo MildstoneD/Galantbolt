@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react";
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-white">
-      <div className="lg:grid lg:grid-cols-5 lg:min-h-[520px]">
+      <div className="lg:grid lg:grid-cols-5 lg:min-h-130">
         {/* Text content */}
         <div className="relative z-10 flex flex-col justify-center px-6 py-16 lg:col-span-3 lg:px-12 lg:py-20 xl:px-20">
           <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-gold sm:text-sm">
@@ -16,7 +16,8 @@ export default function Hero() {
           <p className="mb-8 max-w-lg text-sm leading-relaxed text-gray-text sm:text-base">
             Galantbolt Limited delivers reliable, cost-effective engineering,
             construction, and procurement solutions. From residential buildings
-            to large-scale infrastructure, we build with integrity and precision.
+            to large-scale infrastructure, we build with integrity and
+            precision.
           </p>
           <div className="flex flex-wrap gap-3">
             <a
@@ -43,7 +44,7 @@ export default function Hero() {
                 "url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80')",
             }}
           />
-          <div className="absolute inset-0 hidden bg-gradient-to-r from-white via-white/60 to-transparent lg:block" />
+          <div className="absolute inset-0 hidden bg-linear-to-r from-white via-white/60 to-transparent lg:block" />
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, ChevronRight, Menu, X } from "lucide-react";
+import logoImage from "../assets/Galantbolt Logo Only.png";
 
 const navLinks = [
   { label: "Home", href: "#home", active: true },
@@ -10,12 +11,13 @@ const navLinks = [
   { label: "Contact Us", href: "#contact" },
 ];
 
-function Logo({ className = "h-10 w-10" }) {
+function Logo({ className = "h-10 w-auto" }) {
   return (
-    <svg className={className} viewBox="0 0 48 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M24 2L44 13.5V36.5L24 48L4 36.5V13.5L24 2Z" stroke="#d1a13c" strokeWidth="2" fill="none" />
-      <text x="24" y="32" textAnchor="middle" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="18" fill="#d1a13c">G</text>
-    </svg>
+    <img
+      src={logoImage}
+      alt="Galantbolt Limited"
+      className={`object-contain ${className}`}
+    />
   );
 }
 
@@ -26,7 +28,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
         <a href="#home" className="flex items-center gap-2 shrink-0">
-          <Logo className="h-9 w-9" />
+          <Logo className="h-10 w-auto" />
           <span className="text-sm font-bold tracking-wide text-dark sm:text-base">
             GALANTBOLT LIMITED
           </span>
@@ -62,7 +64,11 @@ export default function Header() {
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {mobileOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
         </button>
       </div>
 
@@ -75,7 +81,9 @@ export default function Header() {
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
                 className={`flex items-center gap-1 rounded px-3 py-2.5 text-sm font-medium ${
-                  link.active ? "bg-gold/10 text-gold" : "text-dark hover:bg-gray-light"
+                  link.active
+                    ? "bg-gold/10 text-gold"
+                    : "text-dark hover:bg-gray-light"
                 }`}
               >
                 {link.label}

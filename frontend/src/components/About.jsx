@@ -10,17 +10,18 @@ export default function About() {
               ABOUT US
             </h2>
             <p className="mb-6 text-sm leading-relaxed text-gray-text sm:text-base">
-              Galantbolt Limited is a Nigerian-based engineering, construction,
-              and procurement company committed to delivering world-class
-              infrastructure solutions. With deep roots in the local market and
-              a vision for global standards, we combine technical expertise with
-              practical innovation to serve clients across residential,
-              commercial, and industrial sectors.
+              Galantbolt Limited is a Nigerian engineering, construction, and
+              procurement company dedicated to delivering innovative, reliable,
+              and cost-effective solutions across the construction and
+              infrastructure sectors. We provide comprehensive services in
+              building construction, plumbing systems, solar energy solutions,
+              interior finishing and furnishing, and procurement, serving
+              residential, commercial, industrial, and public-sector clients.
             </p>
             <p className="mb-8 text-sm leading-relaxed text-gray-text sm:text-base">
-              Our team of skilled professionals brings decades of combined
-              experience to every project, ensuring quality craftsmanship,
-              timely delivery, and lasting value for our clients and communities.
+              Our team of skilled professionals is committed to delivering
+              projects that meet the highest standards of quality, safety,
+              functionality, and sustainability.
             </p>
             <a
               href="#about"
@@ -48,10 +49,10 @@ export default function About() {
                 OUR MISSION
               </h3>
               <p className="text-sm leading-relaxed text-gray-text">
-                To deliver exceptional engineering, construction, and procurement
-                services through skilled professionals, cutting-edge technology,
-                and an unwavering commitment to safety, quality, and client
-                satisfaction.
+                To deliver exceptional engineering, construction, and
+                procurement services through skilled professionals, cutting-edge
+                technology, and an unwavering commitment to safety, quality, and
+                client satisfaction.
               </p>
             </div>
           </div>

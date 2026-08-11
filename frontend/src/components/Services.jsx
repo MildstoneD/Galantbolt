@@ -1,11 +1,4 @@
-import {
-  Building2,
-  Check,
-  Droplets,
-  Package,
-  Sofa,
-  Sun,
-} from "lucide-react";
+import { Building2, Check, Droplets, Package, Sofa, Sun } from "lucide-react";
 
 const services = [
   {
@@ -117,7 +110,10 @@ export default function Services() {
                       key={item}
                       className="flex items-start gap-2 text-xs text-gray-text sm:text-sm"
                     >
-                      <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold" strokeWidth={3} />
+                      <Check
+                        className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold"
+                        strokeWidth={3}
+                      />
                       {item}
                     </li>
                   ))}
