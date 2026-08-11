@@ -1,4 +1,5 @@
 import { ChevronRight, Eye, Target } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -23,12 +24,12 @@ export default function About() {
               projects that meet the highest standards of quality, safety,
               functionality, and sustainability.
             </p>
-            <a
-              href="#about"
+            <Link
+              to="/about"
               className="inline-flex items-center gap-1 rounded border-2 border-gold px-6 py-2.5 text-sm font-semibold text-dark transition-colors hover:bg-gold/5"
             >
               Learn More About Us <ChevronRight className="h-4 w-4" />
-            </a>
+            </Link>
           </div>
 
           <div className="flex flex-col gap-5 sm:flex-row lg:flex-col">

@@ -157,7 +157,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-sm text-gray-400">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                <span>Lagos, Nigeria</span>
+                <span>Owerri and Port Harcourt, Nigeria</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-gray-400">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
