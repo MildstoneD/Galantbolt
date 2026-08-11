@@ -1,11 +1,14 @@
 import { Building2, Check, Droplets, Package, Sofa, Sun } from "lucide-react";
+import Building from "../assets/building.jpeg";
+import Interior from "../assets/interior.jpeg";
+import Plumbing from "../assets/plumbing.jpeg";
+import solar from "../assets/solar.jpeg";
 
 const services = [
   {
     icon: Building2,
     title: "BUILDING CONSTRUCTION",
-    image:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&q=80",
+    image: Building,
     items: [
       "Residential Buildings",
       "Commercial Buildings",
@@ -16,8 +19,7 @@ const services = [
   {
     icon: Droplets,
     title: "PLUMBING SERVICES",
-    image:
-      "https://images.unsplash.com/photo-1607472586893-a37c7364b081?w=400&q=80",
+    image: Plumbing,
     items: [
       "Pipe Installation",
       "Drainage Systems",
@@ -28,8 +30,7 @@ const services = [
   {
     icon: Sun,
     title: "SOLAR ENERGY SOLUTIONS",
-    image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&q=80",
+    image: solar,
     items: [
       "Solar Panel Installation",
       "Inverter Systems",
@@ -40,8 +41,7 @@ const services = [
   {
     icon: Sofa,
     title: "INTERIOR FINISHING & FURNISHING",
-    image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400&q=80",
+    image: Interior,
     items: [
       "Interior Design",
       "Flooring & Tiling",

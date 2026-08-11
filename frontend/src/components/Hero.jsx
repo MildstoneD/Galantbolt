@@ -10,8 +10,7 @@ export default function Hero() {
             ENGINEERING. CONSTRUCTION. PROCUREMENT.
           </p>
           <h1 className="mb-5 text-3xl font-bold leading-tight text-dark sm:text-4xl lg:text-5xl">
-            Building Today.{" "}
-            <span className="text-gold">Empowering Tomorrow.</span>
+            CREATING SPACES. <span className="text-gold">THAT INSPIRE.</span>
           </h1>
           <p className="mb-8 max-w-lg text-sm leading-relaxed text-gray-text sm:text-base">
             Galantbolt Limited delivers reliable, cost-effective engineering,
