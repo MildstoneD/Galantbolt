@@ -14,17 +14,17 @@ const reasons = [
 const stats = [
   {
     icon: FolderKanban,
-    value: "100+",
+    value: "40+",
     label: "Projects Completed",
   },
   {
     icon: Users,
-    value: "50+",
+    value: "35+",
     label: "Satisfied Clients",
   },
   {
     icon: Clock,
-    value: "10+",
+    value: "3+",
     label: "Years of Experience",
   },
   {
@@ -46,7 +46,10 @@ export default function WhyChooseUs() {
             <div className="grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">
               {reasons.map((reason) => (
                 <div key={reason} className="flex items-start gap-2">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-gold" strokeWidth={3} />
+                  <Check
+                    className="mt-0.5 h-4 w-4 shrink-0 text-gold"
+                    strokeWidth={3}
+                  />
                   <span className="text-sm text-gray-text">{reason}</span>
                 </div>
               ))}
@@ -67,9 +70,16 @@ export default function WhyChooseUs() {
                   key={stat.label}
                   className="rounded-lg bg-white/95 p-4 text-center shadow-lg backdrop-blur-sm sm:p-5"
                 >
-                  <stat.icon className="mx-auto mb-2 h-7 w-7 text-gold" strokeWidth={1.5} />
-                  <p className="text-xl font-bold text-dark sm:text-2xl">{stat.value}</p>
-                  <p className="mt-1 text-xs text-gray-text sm:text-sm">{stat.label}</p>
+                  <stat.icon
+                    className="mx-auto mb-2 h-7 w-7 text-gold"
+                    strokeWidth={1.5}
+                  />
+                  <p className="text-xl font-bold text-dark sm:text-2xl">
+                    {stat.value}
+                  </p>
+                  <p className="mt-1 text-xs text-gray-text sm:text-sm">
+                    {stat.label}
+                  </p>
                 </div>
               ))}
             </div>

@@ -145,7 +145,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-gray-400">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                <span>+2348069021837</span>
+                <span>+234 806 902 1837</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-gray-400">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
@@ -170,7 +170,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10 bg-black/30 py-4 text-center">
         <p className="text-xs text-gray-500">
-          &copy; 2026 Galantbolt Limited. All Rights Reserved.
+          &copy; 2023 Galantbolt Limited. All Rights Reserved.
         </p>
       </div>
     </footer>
