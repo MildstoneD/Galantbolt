@@ -34,7 +34,7 @@ export default function Header() {
           </span>
         </a>
 
-        <nav className="hidden items-center gap-6 xl:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -60,7 +60,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="rounded p-2 text-dark xl:hidden"
+          className="rounded p-2 text-dark lg:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
