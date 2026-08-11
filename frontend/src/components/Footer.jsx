@@ -1,13 +1,7 @@
-import {
-  ChevronRight,
-  Clock,
-  Mail,
-  MapPin,
-  Phone,
-} from "lucide-react";
+import { ChevronRight, Clock, Mail, MapPin, Phone } from "lucide-react";
 import { Logo } from "./Header";
 
-function FacebookIcon({ className }) {
+function TiktokIcon({ className }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
       <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
@@ -25,7 +19,13 @@ function LinkedinIcon({ className }) {
 
 function InstagramIcon({ className }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
       <rect x="2" y="2" width="20" height="20" rx="5" />
       <circle cx="12" cy="12" r="4" />
       <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
@@ -51,10 +51,18 @@ const serviceLinks = [
 ];
 
 const socialLinks = [
-  { icon: FacebookIcon, label: "Facebook", href: "#" },
-  { icon: LinkedinIcon, label: "LinkedIn", href: "#" },
-  { icon: InstagramIcon, label: "Instagram", href: "#" },
-  { icon: Mail, label: "Email", href: "mailto:info@galantbolt.com" },
+  {
+    icon: TiktokIcon,
+    label: "TikTok",
+    href: "https://www.tiktok.com/@galantbolt_limited?_r=1&_t=ZS-98dImNYTX52",
+  },
+
+  {
+    icon: InstagramIcon,
+    label: "Instagram",
+    href: "https://www.instagram.com/galantbolt_limited?igsh=MTBzaDZrY3pvczNuNQ%3D%3D&utm_source=qr",
+  },
+  { icon: Mail, label: "Email", href: "mailto:Galantboltlimited@gmail.com" },
 ];
 
 export default function Footer() {
@@ -137,11 +145,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-gray-400">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                <span>+234 801 234 5678<br />+234 802 345 6789</span>
+                <span>+2348069021837</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-gray-400">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                <span>info@galantbolt.com</span>
+                <span>
+                  <a href="mailto:Galantboltlimited@gmail.com">
+                    Galantboltlimited@gmail.com
+                  </a>
+                </span>
               </li>
               <li className="flex items-start gap-3 text-sm text-gray-400">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
@@ -158,7 +170,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10 bg-black/30 py-4 text-center">
         <p className="text-xs text-gray-500">
-          &copy; 2023 Galantbolt Limited. All Rights Reserved.
+          &copy; 2026 Galantbolt Limited. All Rights Reserved.
         </p>
       </div>
     </footer>
